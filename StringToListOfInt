@@ -1,3 +1,4 @@
+string? serviceColumnData = collectionitem.Service;
 if (!string.IsNullOrEmpty(serviceColumnData))
 {
     string[] serviceIdsAsString = serviceColumnData.Contains(',')
