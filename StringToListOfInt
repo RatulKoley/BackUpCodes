@@ -1,0 +1,7 @@
+if (!string.IsNullOrEmpty(serviceColumnData))
+{
+    string[] serviceIdsAsString = serviceColumnData.Contains(',')
+        ? serviceColumnData.Split(',')
+        : new[] { serviceColumnData };
+    List<int> serviceIds = serviceIdsAsString.Select(int.Parse).ToList();
+}
